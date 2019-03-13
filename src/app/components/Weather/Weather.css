@@ -1,0 +1,14 @@
+.weather-info {
+    width: 40%;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.weather-key-name {
+    font-size: 1.5em;
+}
+
+.weather-key {
+    border-bottom: 1px solid orange;
+}

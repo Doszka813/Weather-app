@@ -22,7 +22,6 @@
   grid-area: output;
   background-color: #282c34a8;
   text-align: center;
-  padding: 2em;
 }
 
 
@@ -79,7 +78,7 @@
   
           .wrapper {
               grid-template-columns: 1fr 1fr 1fr;
-              grid-template-rows:  1fr 3fr 4fr;
+              grid-template-rows:  1fr 2fr 6fr;
               grid-gap: 0.5em;
               grid-template-areas: 
               "title title title"

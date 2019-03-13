@@ -11,7 +11,9 @@ class App extends Component {
     temperature: undefined,
     city: undefined,
     country: undefined,
+    clouds: undefined,
     humidity: undefined,
+    pressure: undefined,
     description: undefined,
     error: undefined
   }
@@ -28,10 +30,13 @@ class App extends Component {
           <div className="weather-container">
             <Weather
               temperature={this.state.temperature}
-                    city={this.state.city}
-                    country={this.state.country}
-                    humidity={this.state.humidity}
-                    description={this.state.description}
+              city={this.state.city}
+              country={this.state.country}
+              clouds={this.state.clouds}
+              humidity={this.state.humidity}
+              pressure={this.state.pressure}
+              weather={this.state.weather}
+              description={this.state.description}
               error={this.state.error}
             />
           </div>
@@ -49,10 +54,13 @@ class App extends Component {
     
     if(city && country) {
       this.setState({
-        temperature: response.main.temp-272.15,
+        temperature: response.main.temp-273.15,
         city: response.name,
         country: response.sys.country,
+        clouds: response.clouds.all,
         humidity: response.main.humidity,
+        pressure: response.main.pressure,
+        weather: response.weather[0].icon,
         description: response.weather[0].description,
         error: ""
       })
