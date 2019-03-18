@@ -4,7 +4,7 @@ import Form from './app/components/Form/Form';
 import Weather from './app/components/Weather/Weather';
 import './App.css';
 
-const apiKey = "b97f8e00d38b7a4b76bceeb8b10a1c97";
+const apiKey = "";
 
 class App extends Component {
   state = {
